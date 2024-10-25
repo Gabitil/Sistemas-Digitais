@@ -1,0 +1,1 @@
+module registrador(Q3,Q2,Q1,Q0,in,reset,clock) 

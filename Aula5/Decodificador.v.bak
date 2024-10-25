@@ -1,0 +1,9 @@
+/*
+	Nomes: Gabriel Augusto, Gabriel Araujo
+	Projeto: Decodificador para Display
+	Data: 21/09/2023
+*/
+
+module Decodificador (A, B, C, D, a, b, c, d, e, f, g)
+input (A, B, C, D)
+output (a, b, c, d, e, f, g)

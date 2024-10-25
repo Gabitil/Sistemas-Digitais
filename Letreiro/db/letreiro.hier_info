@@ -1,0 +1,254 @@
+|letreiro
+HEX0[6] <= decodificador7:bloco7.port1
+HEX0[5] <= decodificador7:bloco7.port1
+HEX0[4] <= decodificador7:bloco7.port1
+HEX0[3] <= decodificador7:bloco7.port1
+HEX0[2] <= decodificador7:bloco7.port1
+HEX0[1] <= decodificador7:bloco7.port1
+HEX0[0] <= decodificador7:bloco7.port1
+HEX1[6] <= decodificador6:bloco6.port1
+HEX1[5] <= decodificador6:bloco6.port1
+HEX1[4] <= decodificador6:bloco6.port1
+HEX1[3] <= decodificador6:bloco6.port1
+HEX1[2] <= decodificador6:bloco6.port1
+HEX1[1] <= decodificador6:bloco6.port1
+HEX1[0] <= decodificador6:bloco6.port1
+HEX2[6] <= decodificador5:bloco5.port1
+HEX2[5] <= decodificador5:bloco5.port1
+HEX2[4] <= decodificador5:bloco5.port1
+HEX2[3] <= decodificador5:bloco5.port1
+HEX2[2] <= decodificador5:bloco5.port1
+HEX2[1] <= decodificador5:bloco5.port1
+HEX2[0] <= decodificador5:bloco5.port1
+HEX3[6] <= decodificador4:bloco4.port1
+HEX3[5] <= decodificador4:bloco4.port1
+HEX3[4] <= decodificador4:bloco4.port1
+HEX3[3] <= decodificador4:bloco4.port1
+HEX3[2] <= decodificador4:bloco4.port1
+HEX3[1] <= decodificador4:bloco4.port1
+HEX3[0] <= decodificador4:bloco4.port1
+HEX4[6] <= decodificador3:bloco3.port1
+HEX4[5] <= decodificador3:bloco3.port1
+HEX4[4] <= decodificador3:bloco3.port1
+HEX4[3] <= decodificador3:bloco3.port1
+HEX4[2] <= decodificador3:bloco3.port1
+HEX4[1] <= decodificador3:bloco3.port1
+HEX4[0] <= decodificador3:bloco3.port1
+HEX5[6] <= decodificador2:bloco2.port1
+HEX5[5] <= decodificador2:bloco2.port1
+HEX5[4] <= decodificador2:bloco2.port1
+HEX5[3] <= decodificador2:bloco2.port1
+HEX5[2] <= decodificador2:bloco2.port1
+HEX5[1] <= decodificador2:bloco2.port1
+HEX5[0] <= decodificador2:bloco2.port1
+HEX6[6] <= decodificador1:bloco1.port1
+HEX6[5] <= decodificador1:bloco1.port1
+HEX6[4] <= decodificador1:bloco1.port1
+HEX6[3] <= decodificador1:bloco1.port1
+HEX6[2] <= decodificador1:bloco1.port1
+HEX6[1] <= decodificador1:bloco1.port1
+HEX6[0] <= decodificador1:bloco1.port1
+HEX7[6] <= decodificador:bloco0.port1
+HEX7[5] <= decodificador:bloco0.port1
+HEX7[4] <= decodificador:bloco0.port1
+HEX7[3] <= decodificador:bloco0.port1
+HEX7[2] <= decodificador:bloco0.port1
+HEX7[1] <= decodificador:bloco0.port1
+HEX7[0] <= decodificador:bloco0.port1
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+SW[10] => reset.IN1
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => ~NO_FANOUT~
+SW[15] => ~NO_FANOUT~
+SW[16] => ~NO_FANOUT~
+SW[17] => ~NO_FANOUT~
+CLOCK_50 => CLOCK_50.IN1
+
+
+|letreiro|divisor:ANA
+novo_clock <= novo_clock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => Q[0].ACLR
+reset => Q[1].ACLR
+reset => Q[2].ACLR
+reset => Q[3].ACLR
+reset => Q[4].ACLR
+reset => Q[5].ACLR
+reset => Q[6].ACLR
+reset => Q[7].ACLR
+reset => Q[8].ACLR
+reset => Q[9].ACLR
+reset => Q[10].ACLR
+reset => Q[11].ACLR
+reset => Q[12].ACLR
+reset => Q[13].ACLR
+reset => Q[14].ACLR
+reset => Q[15].ACLR
+reset => Q[16].ACLR
+reset => Q[17].ACLR
+reset => Q[18].ACLR
+reset => Q[19].ACLR
+reset => Q[20].ACLR
+reset => Q[21].ACLR
+reset => Q[22].ACLR
+reset => Q[23].ACLR
+reset => Q[24].ACLR
+reset => Q[25].ACLR
+reset => novo_clock~reg0.ENA
+clock_50 => novo_clock~reg0.CLK
+clock_50 => Q[0].CLK
+clock_50 => Q[1].CLK
+clock_50 => Q[2].CLK
+clock_50 => Q[3].CLK
+clock_50 => Q[4].CLK
+clock_50 => Q[5].CLK
+clock_50 => Q[6].CLK
+clock_50 => Q[7].CLK
+clock_50 => Q[8].CLK
+clock_50 => Q[9].CLK
+clock_50 => Q[10].CLK
+clock_50 => Q[11].CLK
+clock_50 => Q[12].CLK
+clock_50 => Q[13].CLK
+clock_50 => Q[14].CLK
+clock_50 => Q[15].CLK
+clock_50 => Q[16].CLK
+clock_50 => Q[17].CLK
+clock_50 => Q[18].CLK
+clock_50 => Q[19].CLK
+clock_50 => Q[20].CLK
+clock_50 => Q[21].CLK
+clock_50 => Q[22].CLK
+clock_50 => Q[23].CLK
+clock_50 => Q[24].CLK
+clock_50 => Q[25].CLK
+
+
+|letreiro|decodificador:bloco0
+entrada[0] => Decoder0.IN2
+entrada[1] => Decoder0.IN1
+entrada[1] => Decoder1.IN1
+entrada[2] => Decoder0.IN0
+entrada[2] => Decoder1.IN0
+segmentos[6] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|decodificador1:bloco1
+entrada[0] => Decoder0.IN2
+entrada[1] => Decoder0.IN1
+entrada[2] => Decoder0.IN0
+entrada[2] => segmentos[1].DATAIN
+segmentos[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= segmentos.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= entrada[2].DB_MAX_OUTPUT_PORT_TYPE
+segmentos[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|decodificador2:bloco2
+entrada[0] => Decoder0.IN2
+entrada[1] => Decoder0.IN1
+entrada[1] => Decoder1.IN1
+entrada[2] => Decoder0.IN0
+entrada[2] => Decoder1.IN0
+segmentos[6] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|decodificador3:bloco3
+entrada[0] => Decoder0.IN2
+entrada[1] => Decoder0.IN1
+entrada[1] => Decoder1.IN1
+entrada[2] => Decoder0.IN0
+entrada[2] => Decoder1.IN0
+segmentos[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= segmentos.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= segmentos.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|decodificador4:bloco4
+entrada[0] => Decoder0.IN2
+entrada[1] => Decoder0.IN1
+entrada[1] => Decoder1.IN1
+entrada[2] => Decoder0.IN0
+entrada[2] => Decoder1.IN0
+segmentos[6] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|decodificador5:bloco5
+entrada[0] => Decoder0.IN2
+entrada[1] => Decoder0.IN1
+entrada[2] => Decoder0.IN0
+entrada[2] => segmentos[1].DATAIN
+segmentos[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= segmentos.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= entrada[2].DB_MAX_OUTPUT_PORT_TYPE
+segmentos[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|decodificador6:bloco6
+entrada[0] => Decoder0.IN2
+entrada[1] => Decoder0.IN1
+entrada[1] => Decoder1.IN1
+entrada[2] => Decoder0.IN0
+entrada[2] => Decoder1.IN0
+segmentos[6] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|decodificador7:bloco7
+entrada[0] => Decoder0.IN2
+entrada[1] => Decoder0.IN1
+entrada[1] => Decoder1.IN1
+entrada[2] => Decoder0.IN0
+entrada[2] => Decoder1.IN0
+segmentos[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= segmentos.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= segmentos.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

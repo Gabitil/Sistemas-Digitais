@@ -1,0 +1,39 @@
+|somador2bit
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+resultado[0] <= soma1bit:bloco0.port3
+resultado[1] <= soma1bit:bloco1.port3
+resultado[2] <= soma1bit:bloco1.port4
+TE => TE.IN1
+
+
+|somador2bit|soma1bit:bloco0
+A => S.IN0
+A => TS.IN0
+A => TS.IN0
+B => S.IN1
+B => TS.IN1
+B => TS.IN0
+TE => S.IN1
+TE => TS.IN1
+TE => TS.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+TS <= TS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador2bit|soma1bit:bloco1
+A => S.IN0
+A => TS.IN0
+A => TS.IN0
+B => S.IN1
+B => TS.IN1
+B => TS.IN0
+TE => S.IN1
+TE => TS.IN1
+TE => TS.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+TS <= TS.DB_MAX_OUTPUT_PORT_TYPE
+
+

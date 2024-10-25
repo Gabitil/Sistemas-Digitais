@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -3.240
+TNS   : -91.166
+
+Type  : Slow Model Setup 'divisor2:ANA2|novo_clock'
+Slack : -0.123
+TNS   : -0.280
+
+Type  : Slow Model Setup 'divisor:ANA|novo_clock'
+Slack : -0.086
+TNS   : -0.250
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -2.553
+TNS   : -5.105
+
+Type  : Slow Model Hold 'divisor2:ANA2|novo_clock'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'divisor:ANA|novo_clock'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -50.380
+
+Type  : Slow Model Minimum Pulse Width 'divisor2:ANA2|novo_clock'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'divisor:ANA|novo_clock'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -1.013
+TNS   : -18.129
+
+Type  : Fast Model Setup 'divisor2:ANA2|novo_clock'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Fast Model Setup 'divisor:ANA|novo_clock'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.594
+TNS   : -3.187
+
+Type  : Fast Model Hold 'divisor2:ANA2|novo_clock'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'divisor:ANA|novo_clock'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -50.380
+
+Type  : Fast Model Minimum Pulse Width 'divisor2:ANA2|novo_clock'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'divisor:ANA|novo_clock'
+Slack : -0.500
+TNS   : -4.000
+
+------------------------------------------------------------

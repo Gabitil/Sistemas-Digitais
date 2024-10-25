@@ -1,0 +1,44 @@
+# Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl 
+# do soma4bit_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Faculfodase/SD/Aula6 {D:/Faculfodase/SD/Aula6/soma4bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module soma4bit
+# 
+# Top level modules:
+# 	soma4bit
+# vlog -vlog01compat -work work +incdir+D:/Faculfodase/SD/Aula6 {D:/Faculfodase/SD/Aula6/soma1bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module soma1bit
+# 
+# Top level modules:
+# 	soma1bit
+# vlog -vlog01compat -work work +incdir+D:/Faculfodase/SD/Aula6 {D:/Faculfodase/SD/Aula6/decodificador.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Decodificador
+# 
+# Top level modules:
+# 	Decodificador
+# 
+vsim work.soma4bit
+# vsim work.soma4bit 
+# Loading work.soma4bit
+# Loading work.soma1bit
+# Loading work.Decodificador
+wave create -driver freeze -pattern random -initialvalue 0 -period 50ps -random_type Uniform -seed 5 -range 3 0 -starttime 0ps -endtime 1000ps sim:/soma4bit/A
+wave create -driver freeze -pattern random -initialvalue 0 -period 50ps -random_type Uniform -seed 5 -range 3 0 -starttime 0ps -endtime 1000ps sim:/soma4bit/B
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/soma4bit/TE
+add wave -position end  sim:/soma4bit/result
+add wave -position end  sim:/soma4bit/unid
+add wave -position end  sim:/soma4bit/dez
+add wave -position end  sim:/soma4bit/TS
+run -all

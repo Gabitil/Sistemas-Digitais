@@ -1,0 +1,66 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Faculfodase\SD\Aula6\simulation\modelsim
+vDecodificador
+!i10b 1
+!s100 njnbz=e_C0_=__:D9dEDX0
+IhV4b^X7533e@=F2V>aJ`I2
+V>Pj^=A]PNBG470aQZ4]EI1
+Z1 dD:\Faculfodase\SD\Aula6\simulation\modelsim
+w1695321145
+8D:/Faculfodase/SD/Aula6/decodificador.v
+FD:/Faculfodase/SD/Aula6/decodificador.v
+L0 7
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1697743703.388000
+!s107 D:/Faculfodase/SD/Aula6/decodificador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculfodase/SD/Aula6|D:/Faculfodase/SD/Aula6/decodificador.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/Faculfodase/SD/Aula6 -O0
+n@decodificador
+vsoma1bit
+ILg2TFh[mOHenbozWim@JW0
+V<YU@<YVnPnY06LbJD4;AS2
+R1
+w1694718424
+8D:/Faculfodase/SD/Aula6/soma1bit.v
+FD:/Faculfodase/SD/Aula6/soma1bit.v
+L0 11
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 GdVJAJ;<9BRkeiWeIGchj3
+!s85 0
+!s108 1697743703.294000
+!s107 D:/Faculfodase/SD/Aula6/soma1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculfodase/SD/Aula6|D:/Faculfodase/SD/Aula6/soma1bit.v|
+!s101 -O0
+vsoma4bit
+IZcnN^XkJH22V09B_6]fC83
+VNj]o4^GKONVJSjaK=8LL10
+R1
+w1697743624
+8D:/Faculfodase/SD/Aula6/soma4bit.v
+FD:/Faculfodase/SD/Aula6/soma4bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 S7kXVbB[V;25QEA64@:of3
+!s85 0
+!s108 1697743703.215000
+!s107 D:/Faculfodase/SD/Aula6/soma4bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculfodase/SD/Aula6|D:/Faculfodase/SD/Aula6/soma4bit.v|
+!s101 -O0

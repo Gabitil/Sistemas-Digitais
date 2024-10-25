@@ -1,0 +1,15 @@
+	/*
+	*
+	* Nomes: Gabriel Augusto
+	* Data: 31/08/2023
+	*
+	*--------------------------------------------------*
+	*
+	* Projeto para comparação de 4 bits
+	*/
+	
+	module comp4bits(A,B,IG,MA,ME);
+	input [3:0] A,B;
+	output IG, MA, ME;
+	
+	

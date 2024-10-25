@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Facul\SD\Aula10\simulation\modelsim
+vcontador10
+IXZ<9kMCMJmO2^BoPAL7Y02
+VJ;GPTj<Ggm?V477Tz8MI`1
+Z1 dD:\Facul\SD\Aula10\simulation\modelsim
+w1701370676
+8D:/Facul/SD/Aula10/contador10.v
+FD:/Facul/SD/Aula10/contador10.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/Facul/SD/Aula10 -O0
+!i10b 1
+!s100 nHOj;;7Cj=C60i7Z]i^oE1
+!s85 0
+!s108 1701371387.446000
+!s107 D:/Facul/SD/Aula10/contador10.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Facul/SD/Aula10|D:/Facul/SD/Aula10/contador10.v|
+!s101 -O0
+vdecodificador
+!i10b 1
+!s100 R6D?BEYBmlP;[L`czJ[dT1
+IXNOKl6bRR>M;NaW<I8_<g2
+VQ=10Q;a9NHBWZV<EzSojm2
+R1
+w1701368660
+8D:/Facul/SD/Aula10/decodificador.v
+FD:/Facul/SD/Aula10/decodificador.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1701371387.808000
+!s107 D:/Facul/SD/Aula10/decodificador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Facul/SD/Aula10|D:/Facul/SD/Aula10/decodificador.v|
+!s101 -O0
+R3
+R4
+vdivisor
+IQI1UiP@QQB@W6b`;eJBAJ3
+V;[=zJPoMSH=FfL6L[TJI<1
+R1
+w1701371348
+8D:/Facul/SD/Aula10/divisor.v
+FD:/Facul/SD/Aula10/divisor.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 9FoQdd@G_[?[a]1_EI<k32
+!s85 0
+!s108 1701371387.684000
+!s107 D:/Facul/SD/Aula10/divisor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Facul/SD/Aula10|D:/Facul/SD/Aula10/divisor.v|
+!s101 -O0

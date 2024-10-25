@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, D:/Facul/SD/Aula1/alarme_carro.v
+source_file = 1, D:/Facul/SD/Aula1/output_files/Chain1.cdf
+source_file = 1, D:/Facul/SD/Aula1/db/alarme_carro.cbx.xml
+design_name = alarme_carro
+instance = comp, \C~I\, C, alarme_carro, 1
+instance = comp, \P~I\, P, alarme_carro, 1
+instance = comp, \F~I\, F, alarme_carro, 1
+instance = comp, \S~0\, S~0, alarme_carro, 1
+instance = comp, \S~I\, S, alarme_carro, 1

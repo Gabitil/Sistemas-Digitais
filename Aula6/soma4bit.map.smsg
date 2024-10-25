@@ -1,0 +1,6 @@
+Info (10281): Verilog HDL Declaration information at soma4bit.v(6): object "A" differs only in case from object "a" in the same scope
+Info (10281): Verilog HDL Declaration information at soma4bit.v(7): object "B" differs only in case from object "b" in the same scope
+Info (10281): Verilog HDL Declaration information at decodificador.v(8): object "A" differs only in case from object "a" in the same scope
+Info (10281): Verilog HDL Declaration information at decodificador.v(8): object "B" differs only in case from object "b" in the same scope
+Info (10281): Verilog HDL Declaration information at decodificador.v(8): object "C" differs only in case from object "c" in the same scope
+Info (10281): Verilog HDL Declaration information at decodificador.v(8): object "D" differs only in case from object "d" in the same scope

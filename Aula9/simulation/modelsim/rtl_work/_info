@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Facul\SD\Aula9\simulation\modelsim
+vregistrador
+I1m06?UT0::h4`B03`DF_@0
+VE>0;O`00S1a;loS4n<<nZ2
+Z1 dD:\Facul\SD\Aula9\simulation\modelsim
+w1700764593
+8D:/Facul/SD/Aula9/registrador.v
+FD:/Facul/SD/Aula9/registrador.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 FG;dbE[TV[>K??T17aOTT1
+!s85 0
+!s108 1700765038.113000
+!s107 D:/Facul/SD/Aula9/registrador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Facul/SD/Aula9|D:/Facul/SD/Aula9/registrador.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/Facul/SD/Aula9 -O0
+vTB_regis
+!i10b 1
+!s100 Z@blPe>B8?zZZ<nNjCLjd3
+IhLc4jco@i<9cMeIVLP2Co0
+VzA7OWnJ^NiAdWY<M7L1HL0
+R1
+w1700764450
+8D:/Facul/SD/Aula9/TB_regis.v
+FD:/Facul/SD/Aula9/TB_regis.v
+L0 15
+R2
+r1
+!s85 0
+31
+!s108 1700765038.238000
+!s107 D:/Facul/SD/Aula9/TB_regis.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Facul/SD/Aula9|D:/Facul/SD/Aula9/TB_regis.v|
+!s101 -O0
+R3
+R4
+n@t@b_regis

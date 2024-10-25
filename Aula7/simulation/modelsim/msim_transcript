@@ -1,0 +1,162 @@
+# Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl 
+# do muxdem_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Faculfodase/SD/Aula7 {D:/Faculfodase/SD/Aula7/muxdem.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module muxdem
+# 
+# Top level modules:
+# 	muxdem
+# 
+vsim work.muxdem
+# vsim work.muxdem 
+# Loading work.muxdem
+add wave -position insertpoint  \
+sim:/muxdem/I0
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1600ps sim:/muxdem/I0
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 300ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/muxdem/I0
+# /muxdem/I0 already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 300ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/muxdem/I0
+# /muxdem/I0 already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+force -freeze Edit:/muxdem/I0 1 0, 0 {150 ps} -r 300
+# ** Error: (vsim-3561) No objects found matching 'Edit'.
+# ** Error: (vsim-4008) Object 'Edit:/muxdem/I0' not found.
+# 
+wave modify -driver freeze -pattern clock -initialvalue HiZ -period 300ps -dutycycle 50 -starttime 0ps -endtime 1600ps Edit:/muxdem/I0
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 200ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/muxdem/I1
+wave modify -driver freeze -pattern clock -initialvalue HiZ -period 400ps -dutycycle 50 -starttime 0ps -endtime 1600ps Edit:/muxdem/I0
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/muxdem/sel
+add wave -position end  sim:/muxdem/S
+run -all
+force -freeze Edit:/muxdem/sel 1 0, 0 {200 ps} -r 400
+# ** Error: (vsim-3561) No objects found matching 'Edit'.
+# ** Error: (vsim-4008) Object 'Edit:/muxdem/sel' not found.
+# 
+wave modify -driver freeze -pattern clock -initialvalue HiZ -period 400ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/muxdem/sel
+force -freeze Edit:/muxdem/I1 1 0, 0 {100 ps} -r 200
+# ** Error: (vsim-3561) No objects found matching 'Edit'.
+# ** Error: (vsim-4008) Object 'Edit:/muxdem/I1' not found.
+# 
+wave modify -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1600ps Edit:/muxdem/I0
+run -all
+# 
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I0 "Time value must be greater than "now": 1600 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I1 "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/sel "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+run -all
+# 
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I0 "Time value must be greater than "now": 1600 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I1 "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/sel "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+run -all
+# 
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I0 "Time value must be greater than "now": 1600 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I1 "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/sel "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+run -all
+# 
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I0 "Time value must be greater than "now": 1600 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I1 "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/sel "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+run -all
+# 
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I0 "Time value must be greater than "now": 1600 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I1 "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/sel "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+run -all
+# 
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I0 "Time value must be greater than "now": 1600 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I1 "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/sel "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+restart
+run -all
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1600ps Edit:/muxdem/I0
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/muxdem/I1
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 400ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/muxdem/sel
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/muxdem/I0
+restart
+run -all
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/muxdem/I0
+restart
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/muxdem/I0
+run -all
+run -all
+# 
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I1 "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/sel "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+run -all
+# 
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/I1 "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /muxdem/sel "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Break key hit 
+restart
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/muxdem/I0
+add wave -position 0  sim:/muxdem/I0
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/muxdem/I0
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/muxdem/I0
+run -all
+restart
+run -all
+wave export -file {} -starttime 0 -endtime 1000 -format force -designunit muxdem
+# errormessage
+# Export file not specified.
+# Usage : wave export -file <name> -starttime <time> -endtime <time> -format  <["force" | "vcd" | "vhdl" | "vlog"]> -designunit <name> [-f]wave export -file onda -starttime 0 -endtime 1200 -format force -designunit muxdem
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Faculfodase/SD/Aula7/simulation/modelsim/wave.do
+wave editwrite -file D:/Faculfodase/SD/Aula7/simulation/modelsim/wave.do -append

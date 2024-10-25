@@ -1,0 +1,32 @@
+module divisor(novo_clock,reset,clock_50);
+	input reset;
+	input clock_50;
+	
+	output novo_clock;
+	
+	
+	reg [23:0]Q;
+   wire clk;
+
+assign clk = clock_50;
+	
+	initial 
+	begin
+	  Q = 24'b000;
+	end
+
+always @ (posedge clk or negedge reset) 
+begin
+   if (reset == 1'b0) 
+	begin
+     Q = 24'b000;
+   end
+	
+   else begin
+     Q = Q + 1;
+   end
+end
+
+assign novo_clock = Q[20]; // novo_clock = 50M/2^24   =   3Hz
+
+endmodule

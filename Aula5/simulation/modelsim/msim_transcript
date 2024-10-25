@@ -1,0 +1,51 @@
+# Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl 
+# do Decodificador_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Faculfodase/SD/Aula5 {D:/Faculfodase/SD/Aula5/Decodificador.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Decodificador
+# 
+# Top level modules:
+# 	Decodificador
+# 
+vsim work.Decodificador
+# vsim work.Decodificador 
+# Loading work.Decodificador
+vsim work.Decodificador
+# vsim work.Decodificador 
+# Loading work.Decodificador
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Decodificador/A
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 200ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Decodificador/B
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 300ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Decodificador/C
+wave modify -driver freeze -pattern clock -initialvalue HiZ -period 400ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/Decodificador/C
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 800ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Decodificador/D
+wave modify -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1600ps Edit:/Decodificador/A
+wave modify -driver freeze -pattern clock -initialvalue HiZ -period 200ps -dutycycle 50 -starttime 0ps -endtime 1600ps Edit:/Decodificador/B
+wave modify -driver freeze -pattern clock -initialvalue HiZ -period 400ps -dutycycle 50 -starttime 0ps -endtime 1600ps Edit:/Decodificador/C
+wave modify -driver freeze -pattern clock -initialvalue HiZ -period 800ps -dutycycle 50 -starttime 0ps -endtime 1600ps Edit:/Decodificador/D
+add wave -position end  sim:/Decodificador/a
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: gabri  Hostname: GABITIL  ProcessID: 10292
+# 
+#           Attempting to use alternate WLF file "./wlftv91sih".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftv91sih
+# 
+add wave -position end  sim:/Decodificador/b
+add wave -position end  sim:/Decodificador/c
+add wave -position end  sim:/Decodificador/d
+add wave -position end  sim:/Decodificador/e
+add wave -position end  sim:/Decodificador/f
+add wave -position end  sim:/Decodificador/g
+run -all

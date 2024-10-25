@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Faculfodase\SD\Aula7\simulation\modelsim
+vmuxdem
+!i10b 1
+!s100 LFzlOmU]f=KFK:I]Re?aA1
+IWn]@YYAod9S3F?@IQMSRD0
+V6<LF:EGgBOV7coO?GaJ=Q2
+Z1 dD:\Faculfodase\SD\Aula7\simulation\modelsim
+w1697741397
+8D:/Faculfodase/SD/Aula7/muxdem.v
+FD:/Faculfodase/SD/Aula7/muxdem.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1697741433.965000
+!s107 D:/Faculfodase/SD/Aula7/muxdem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculfodase/SD/Aula7|D:/Faculfodase/SD/Aula7/muxdem.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/Faculfodase/SD/Aula7 -O0

@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Faculfodase\SD\Aula5\simulation\modelsim
+vDecodificador
+!i10b 1
+!s100 Kf3fK>^iJa[bVTFF_ziFm1
+Ia9dY9684ZG]eJkTWVlNm;1
+V>Pj^=A]PNBG470aQZ4]EI1
+Z1 dD:\Faculfodase\SD\Aula5\simulation\modelsim
+w1695321145
+8D:/Faculfodase/SD/Aula5/Decodificador.v
+FD:/Faculfodase/SD/Aula5/Decodificador.v
+L0 7
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1696164740.194000
+!s107 D:/Faculfodase/SD/Aula5/Decodificador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Faculfodase/SD/Aula5|D:/Faculfodase/SD/Aula5/Decodificador.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/Faculfodase/SD/Aula5 -O0
+n@decodificador

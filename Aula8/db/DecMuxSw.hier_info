@@ -1,0 +1,35 @@
+|DecMuxSw
+SW[14] => Decoder0.IN3
+SW[15] => Decoder0.IN2
+SW[16] => Decoder0.IN1
+SW[17] => Decoder0.IN0
+HEX0[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[6] <= <GND>
+HEX1[5] <= <GND>
+HEX1[4] <= <GND>
+HEX1[3] <= <GND>
+HEX1[2] <= <GND>
+HEX1[1] <= <GND>
+HEX1[0] <= <GND>
+HEX2[6] <= <GND>
+HEX2[5] <= <GND>
+HEX2[4] <= <GND>
+HEX2[3] <= <GND>
+HEX2[2] <= <GND>
+HEX2[1] <= <GND>
+HEX2[0] <= <GND>
+HEX3[6] <= <GND>
+HEX3[5] <= <GND>
+HEX3[4] <= <GND>
+HEX3[3] <= <GND>
+HEX3[2] <= <GND>
+HEX3[1] <= <GND>
+HEX3[0] <= <GND>
+
+

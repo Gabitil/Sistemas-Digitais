@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Facul\SD\Aula1\simulation\modelsim
+valarme_carro
+!i10b 1
+!s100 m7nFR@OKLg>[[OcEcQVVB0
+I5=TUezbX62zdJY2RM9QDj1
+VMOzlZ2=[F<;GKmNGIYZh21
+Z1 dD:\Facul\SD\Aula1\simulation\modelsim
+w1699534983
+8D:/Facul/SD/Aula1/alarme_carro.v
+FD:/Facul/SD/Aula1/alarme_carro.v
+L0 12
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1700148368.385000
+!s107 D:/Facul/SD/Aula1/alarme_carro.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Facul/SD/Aula1|D:/Facul/SD/Aula1/alarme_carro.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/Facul/SD/Aula1 -O0
